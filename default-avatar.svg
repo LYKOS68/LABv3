@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Hintergrund-Verlauf mit hellgrünem / olivem Stich -->
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d3b1f" />
+      <stop offset="50%" stop-color="#2a2816" />
+      <stop offset="100%" stop-color="#18170d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Runder Hintergrund mit Verlauf -->
+  <circle cx="64" cy="64" r="64" fill="url(#avatarBg)" />
+
+  <!-- Subtiler Innenrahmen -->
+  <circle cx="64" cy="64" r="62.5" fill="none" stroke="#686236" stroke-width="1.5" opacity="0.5" />
+
+  <!-- Benutzer-Silhouette (Kopf & Schultern) -->
+  <g fill="#d4ce9b">
+    <!-- Kopf -->
+    <circle cx="64" cy="48" r="20" />
+    <!-- Schultern / Oberkörper -->
+    <path d="M 28,104 C 28,84 44,76 64,76 C 84,76 100,84 100,104 C 100,110 94,116 88,116 H 40 C 34,116 28,110 28,104 Z" />
+  </g>
+</svg>
