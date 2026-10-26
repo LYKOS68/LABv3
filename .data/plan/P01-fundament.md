@@ -5,12 +5,12 @@
 ## Zulassung
 _Ausgangslage_
 
-- [ ] Go ≥ 1.22 ist installiert (`go version`).
-- [ ] PostgreSQL läuft lokal, eine leere Datenbank `lab` mit eigenem User existiert.
-- [ ] `Brand.md`, `draft.md` und die Logo-/SVG-Assets liegen in `LABv3/`.
+- [x] Go ≥ 1.22 ist installiert (`go version`).
+- [ X] PostgreSQL läuft lokal, eine leere Datenbank `raplab` mit eigenem User existiert.
+- [ X] `Brand.md`, `draft.md` und die Logo-/SVG-Assets liegen in `LABv3/`.  =( HAB ICH[ROMAN] UMGELEGT auf `.LABv3/data/`
 
 ## Ziel
-Ein laufender Go-Server mit Postgres, Grundlayout und Brand-CSS – alles flach in package main.
+Ein laufender Go-WEB-Server mit Postgres, templ, Grundlayout und Brand-CSS – alles flach in package main.
 
 ## Schritte (konkrete Prompts)
 1. „Lies draft.md und Brand.md. Iteration 1: git init, .gitignore, go.mod (Modul `lab`), main.go mit net/http-Server auf :8080 und GET /health. Baue und starte.“

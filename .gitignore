@@ -1,5 +1,7 @@
 .env
 *.env
 backups/
-/lab
-/lab.exe
+/raplab
+/raplab.exe
+LABv3.code-workspace
+node_modules/
