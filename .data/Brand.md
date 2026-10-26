@@ -69,7 +69,28 @@
 
 ## 4. Farben
 
-### Rohpalette aus den Assets
+### Freigegebene Palette (2026-10-26) · gilt vor allem Folgenden
+
+Gemessen aus `hero1.jpeg` (Leder + Gold-Schriftzug), `hero2.jpg` (Neon-Kassette) und dem Gold-Schriftzug. Von Roman freigegeben („das bin ich“). Die ältere Oliv/Sage-Palette weiter unten ist damit **abgelöst**. Tokens in `tailwind.config.js`.
+
+| Gruppe | Token | Hex | Einsatz |
+|---|---|---|---|
+| Grund | `ink` | `#0b0c0e` | Hintergrund: kühles Anthrazit (seit 2026-10-26 statt Leder-Schwarz `#110b04`, das zu braun wirkte) |
+| Leder | `leather-dark` | `#2a1f15` | Flächen |
+| Leder | `leather` | `#4d4135` | Karten, Linien |
+| Leder | `paper` | `#efe6cf` | Text (Creme) |
+| Gold | `gold-shine` | `#f5e6b2` | Highlights, Glanz im Button-Verlauf |
+| Gold | `gold-light` | `#e1cf9a` | Akzenttext |
+| Gold | `gold` | `#cab682` | Buttons, Linien |
+| Gold | `gold-brass` | `#9a8553` | Messing, Schatten |
+| Grün | `spray` | `#6a8652` | dezenter Grün-Akzent |
+| Grün | `cassette` | `#213a24` | grüne Flächen |
+| Grün | `neon` | `#52e158` | nur als Funke (Label, Leuchtpunkt), nie als Fläche |
+| Grün | `neon-light` | `#8dff6e` | heller Neon-Touch mit Glow: Krone, aktiver Menüpunkt, Labels, Naht unter dem Hero, Hover |
+
+Buttons: Gold-Verlauf `#f5e6b2 → #cab682 → #9a8553`, Text `#1a1206`.
+
+### Rohpalette aus den Assets (abgelöst)
 
 | Token | Hex | Herkunft / Rolle |
 |---|---|---|

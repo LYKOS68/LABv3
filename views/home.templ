@@ -19,7 +19,7 @@ templ Home() {
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-			<meta name="theme-color" content="#080907"/>
+			<meta name="theme-color" content="#0b0c0e"/>
 			<meta name="description" content="RAP-LAB — ein Ort für das, was zwischen Idee und Musik passiert."/>
 			<title>RAP-LAB — Musik entwickeln. Menschen finden.</title>
 			<link rel="preload" href="/static/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin/>
@@ -30,14 +30,14 @@ templ Home() {
 			<header class="site-header">
 				<div class="header-inner">
 					<a class="brand" href="/" aria-label="RAP-LAB Startseite">
-						@crownIcon("brand-crown")
+						@crownIcon("brand-crown neon-glow")
 						<span>RAP-LAB</span>
 					</a>
 					<nav class="main-nav" aria-label="Hauptnavigation">
 						<a href="/" aria-current="page">Home</a>
 						<a href="#">LAB-Studio</a>
 						<a href="#">LAB-Connect</a>
-						<a href="#">Über uns</a>
+						<a href="#">ÜBER UNS</a>
 					</nav>
 					<div class="header-actions">
 						<a class="icon-btn" href="#" aria-label="Suche">
@@ -69,7 +69,7 @@ templ Home() {
 							<li class="honesty-last">Oder du hörst irgendwann auf, deinen Musikprozess aus Einzelteilen zusammenzubauen.</li>
 						</ul>
 						<div class="signature">
-							@crownIcon("signature-crown")
+							@crownIcon("signature-crown neon-glow")
 							<p><strong>RAP-LAB.</strong><span>Einfacher. Echter. Weiter.</span></p>
 						</div>
 					</aside>
@@ -77,6 +77,7 @@ templ Home() {
 				<section class="cards" aria-label="Bereiche">
 					<a class="card card-studio" href="#">
 						<div class="card-body">
+							<span class="card-kicker">01</span>
 							<h2>LAB-Studio</h2>
 							<p>Ideen festhalten. Projekte strukturieren. Dranbleiben.</p>
 						</div>
@@ -84,19 +85,23 @@ templ Home() {
 					</a>
 					<a class="card card-connect" href="#">
 						<div class="card-body">
+							<span class="card-kicker">02</span>
 							<h2>LAB-Connect</h2>
 							<p>Producer, Mixer, Videografen und mehr finden. Direkt vernetzen.</p>
 						</div>
 						<span class="card-arrow">@arrowIcon()</span>
 					</a>
-					<div class="card card-steps" aria-label="Der Weg">
-						<ol class="steps">
-							<li>Song</li>
-							<li>Mix</li>
-							<li>Video</li>
-							<li>Release</li>
-							<li>Next Level …</li>
-						</ol>
+					<div class="card card-steps">
+						<div class="card-body">
+							<span class="card-kicker">03</span>
+							<ol class="process" aria-label="Der Weg">
+								<li>Song</li>
+								<li>Mix</li>
+								<li>Video</li>
+								<li>Release</li>
+							</ol>
+							<p class="process-goal">Next Level.</p>
+						</div>
 						@crownIcon("steps-crown")
 					</div>
 				</section>

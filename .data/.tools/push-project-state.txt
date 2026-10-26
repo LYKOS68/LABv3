@@ -1,0 +1,7 @@
+      Append one new line to `.data/project_state.jsonl` (append-only, never edit or delete existing lines). The file's first line must remain `<!-APPEND-ONLY-!>`.
+      Audience: the next CLI model that continues this work with Roman, not Roman. Write machine-oriented: short fragments, no prose, no greetings, no explanations, nothing derivable from the repo.
+      Sources, in this order: (1) the last 10-15 user and assistant turns of this chat, both directions; (2) the last line of `.docs/project_state.jsonl`, if any; (3) `git rev-parse --short HEAD`. Later turns override earlier ones. Use only facts evidenced in these sources; mark anything missing or unclear as `LÜCKE`. Do not read other files to fill fields.
+      If the project state is unchanged since the last line, append nothing and say so.
+      One JSON object, fields (strings):
+      timestamp (ISO 8601 date and time), model (your exact current model name and ID; never guess, never copy from earlier lines), environment (agent/CLI and OS), path (absolute working directory), project, state (what exists and works, with `UNVERIFIED` where unchecked), deployment (how and where it runs), context (constraints and open points relevant for the next model), git (short commit hash).
+      Validate the line as JSON before appending. Do not modify any other file. Print the appended line.

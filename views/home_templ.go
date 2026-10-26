@@ -112,23 +112,15 @@ func Home() templ.Component {
 		}
 		ctx = templ.InitializeContext(ctx)
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<!doctype html><html lang=\"de\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"theme-color\" content=\"#080907\"><meta name=\"description\" content=\"RAP-LAB — ein Ort für das, was zwischen Idee und Musik passiert.\"><title>RAP-LAB — Musik entwickeln. Menschen finden.</title><link rel=\"preload\" href=\"/static/fonts/permanent-marker-latin-400-normal.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"preload\" href=\"/static/fonts/montserrat-latin-700-normal.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"preload\" href=\"/static/fonts/karla-latin-400-normal.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"stylesheet\" href=\"/static/app.css\"></head><body class=\"min-h-screen bg-ink text-paper antialiased\"><header class=\"site-header\"><div class=\"header-inner\"><a class=\"brand\" href=\"/\" aria-label=\"RAP-LAB Startseite\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<!doctype html><html lang=\"de\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"theme-color\" content=\"#0b0c0e\"><meta name=\"description\" content=\"RAP-LAB — ein Ort für das, was zwischen Idee und Musik passiert.\"><title>RAP-LAB — Musik entwickeln. Menschen finden.</title><link rel=\"preload\" href=\"/static/fonts/montserrat-latin-700-normal.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"preload\" href=\"/static/fonts/karla-latin-400-normal.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"stylesheet\" href=\"/static/app.css\"></head><body class=\"min-h-screen bg-ink text-paper antialiased\"><header class=\"site-header\"><div class=\"header-inner\"><a class=\"brand\" href=\"/\" aria-label=\"RAP-LAB Startseite\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = crownIcon("brand-crown").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = crownIcon("brand-crown neon-glow").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<span>RAP-LAB</span></a><nav class=\"main-nav\" aria-label=\"Hauptnavigation\"><a href=\"/\" aria-current=\"page\">Home</a> <a href=\"#\">LAB-Studio</a> <a href=\"#\">LAB-Connect</a> <a href=\"#\">Über uns</a></nav><div class=\"header-actions\"><a class=\"icon-btn\" href=\"#\" aria-label=\"Suche\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><path d=\"M16 16l4.5 4.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path></svg></a> <a class=\"btn btn-outline btn-sm\" href=\"#\">Login</a> <a class=\"btn btn-gold btn-sm\" href=\"#\">Registrieren</a></div></div></header><main class=\"page\"><section class=\"hero\" aria-labelledby=\"hero-title\"><div class=\"hero-main\"><div class=\"wordmark\">")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = crownIcon("wordmark-crown").Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "<p class=\"wordmark-text\">RAP-<span>LAB</span></p></div><h1 id=\"hero-title\" class=\"hero-tagline\">Ein Ort für das, <br>was zwischen Idee <br>und Musik passiert.</h1><div class=\"hero-ctas\"><a class=\"btn btn-gold\" href=\"#\">LAB-Studio starten ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<span>RAP-LAB</span></a><nav class=\"main-nav\" aria-label=\"Hauptnavigation\"><a href=\"/\" aria-current=\"page\">Home</a> <a href=\"#\">LAB-Studio</a> <a href=\"#\">LAB-Connect</a> <a href=\"#\">ÜBER UNS</a></nav><div class=\"header-actions\"><a class=\"icon-btn\" href=\"#\" aria-label=\"Suche\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><path d=\"M16 16l4.5 4.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path></svg></a> <a class=\"btn btn-outline btn-sm\" href=\"#\">Login</a> <a class=\"btn btn-gold btn-sm\" href=\"#\">Registrieren</a></div></div></header><main class=\"page\"><section class=\"hero\" aria-labelledby=\"hero-title\"><div class=\"hero-main\"><img class=\"wordmark\" src=\"/static/img/wordmark.png\" width=\"1264\" height=\"390\" alt=\"RAP-LAB\"><h1 id=\"hero-title\" class=\"hero-tagline\">Ein Ort für das, <br>was zwischen Idee <br>und Musik passiert.</h1><div class=\"hero-ctas\"><a class=\"btn btn-gold\" href=\"#\">LAB-Studio starten ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -136,7 +128,7 @@ func Home() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "</a> <a class=\"btn btn-outline\" href=\"#\">LAB-Connect entdecken ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 7, "</a> <a class=\"btn btn-outline\" href=\"#\">LAB-Connect entdecken ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -144,23 +136,15 @@ func Home() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "</a></div></div><aside class=\"honesty\" aria-labelledby=\"honesty-title\"><h2 id=\"honesty-title\" class=\"honesty-title\">Denn <span>mal ehrlich:</span></h2><ul class=\"honesty-list\"><li>Du kannst den nächsten Song auch wieder in deine Handy-Notizen schreiben.</li><li>Den Producer kannst du wieder über fünf Ecken suchen.</li><li>Den Mixer wieder in irgendeiner Instagram-Story finden.</li><li>Den Videografen wieder irgendwo in einem Discord-Server suchen.</li><li>Und deine Brancheninformationen kannst du dir wieder aus zehn verschiedenen Quellen zusammensuchen.</li><li class=\"honesty-last\">Oder du hörst irgendwann auf, deinen Musikprozess aus Einzelteilen zusammenzubauen.</li></ul><div class=\"signature\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 8, "</a></div></div><aside class=\"honesty\" aria-labelledby=\"honesty-title\"><h2 id=\"honesty-title\" class=\"honesty-title\">Denn <span>mal ehrlich:</span></h2><ul class=\"honesty-list\"><li>Du kannst den nächsten Song auch wieder in deine Handy-Notizen schreiben.</li><li>Den Producer kannst du wieder über fünf Ecken suchen.</li><li>Den Mixer wieder in irgendeiner Instagram-Story finden.</li><li>Den Videografen wieder irgendwo in einem Discord-Server suchen.</li><li>Und deine Brancheninformationen kannst du dir wieder aus zehn verschiedenen Quellen zusammensuchen.</li><li class=\"honesty-last\">Oder du hörst irgendwann auf, deinen Musikprozess aus Einzelteilen zusammenzubauen.</li></ul><div class=\"signature\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = crownIcon("signature-crown").Render(ctx, templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = crownIcon("signature-crown neon-glow").Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 10, "<p><strong>RAP-LAB.</strong><span>Einfacher. Echter. Weiter.</span></p></div></aside></section><section class=\"cards\" aria-label=\"Bereiche\"><a class=\"card card-studio\" href=\"#\"><div class=\"card-body\"><h2>LAB-Studio</h2><p>Ideen festhalten. Projekte strukturieren. Dranbleiben.</p></div><span class=\"card-arrow\">")
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = arrowIcon().Render(ctx, templ_7745c5c3_Buffer)
-		if templ_7745c5c3_Err != nil {
-			return templ_7745c5c3_Err
-		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 11, "</span></a> <a class=\"card card-connect\" href=\"#\"><div class=\"card-body\"><h2>LAB-Connect</h2><p>Producer, Mixer, Videografen und mehr finden. Direkt vernetzen.</p></div><span class=\"card-arrow\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "<p><strong>RAP-LAB.</strong><span>Einfacher. Echter. Weiter.</span></p></div></aside></section><section class=\"cards\" aria-label=\"Bereiche\"><a class=\"card card-studio\" href=\"#\"><div class=\"card-body\"><span class=\"card-kicker\">01</span><h2>LAB-Studio</h2><p>Ideen festhalten. Projekte strukturieren. Dranbleiben.</p></div><span class=\"card-arrow\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -168,7 +152,15 @@ func Home() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 12, "</span></a><div class=\"card card-steps\" aria-label=\"Der Weg\"><ol class=\"steps\"><li>Song</li><li>Mix</li><li>Video</li><li>Release</li><li>Next Level …</li></ol>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 10, "</span></a> <a class=\"card card-connect\" href=\"#\"><div class=\"card-body\"><span class=\"card-kicker\">02</span><h2>LAB-Connect</h2><p>Producer, Mixer, Videografen und mehr finden. Direkt vernetzen.</p></div><span class=\"card-arrow\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = arrowIcon().Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 11, "</span></a><div class=\"card card-steps\"><div class=\"card-body\"><span class=\"card-kicker\">03</span><ol class=\"process\" aria-label=\"Der Weg\"><li>Song</li><li>Mix</li><li>Video</li><li>Release</li></ol><p class=\"process-goal\">Next Level.</p></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -176,7 +168,7 @@ func Home() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, "</div></section></main></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 12, "</div></section></main></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
