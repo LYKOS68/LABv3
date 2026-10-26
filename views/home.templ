@@ -22,7 +22,6 @@ templ Home() {
 			<meta name="theme-color" content="#080907"/>
 			<meta name="description" content="RAP-LAB — ein Ort für das, was zwischen Idee und Musik passiert."/>
 			<title>RAP-LAB — Musik entwickeln. Menschen finden.</title>
-			<link rel="preload" href="/static/fonts/permanent-marker-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
 			<link rel="preload" href="/static/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin/>
 			<link rel="preload" href="/static/fonts/karla-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
 			<link rel="stylesheet" href="/static/app.css"/>
@@ -52,10 +51,7 @@ templ Home() {
 			<main class="page">
 				<section class="hero" aria-labelledby="hero-title">
 					<div class="hero-main">
-						<div class="wordmark">
-							@crownIcon("wordmark-crown")
-							<p class="wordmark-text">RAP-<span>LAB</span></p>
-						</div>
+						<img class="wordmark" src="/static/img/wordmark.png" width="1264" height="390" alt="RAP-LAB"/>
 						<h1 id="hero-title" class="hero-tagline">Ein Ort für das, <br/>was zwischen Idee <br/>und Musik passiert.</h1>
 						<div class="hero-ctas">
 							<a class="btn btn-gold" href="#">LAB-Studio starten @arrowIcon()</a>
